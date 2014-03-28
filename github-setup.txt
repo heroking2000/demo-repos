@@ -11,6 +11,9 @@ Host  github
     User heroking2000
     Port 22
     IdentityFile  ~/.ssh/id_rsa_github
+ServerAliveInterval 30
+ControlMaster auto
+ControlPath /tmp/master-%r@%h:%p
 并修改config文件权限
 $ chmod 600 ~/.ssh/config
 否则在交换密钥时提示Bad owner or permissions on ~/.ssh/config
