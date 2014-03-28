@@ -9,7 +9,6 @@ $ xclip -sel clip < id_rsa_github.pub
 Host  github
     Hostname github.com
     User git 
-    Port 22
     IdentityFile  ~/.ssh/id_rsa_github
 并修改config文件权限
 $ chmod 600 ~/.ssh/config
