@@ -6,7 +6,7 @@ $ ssh-keygen -t rsa -C "heroking2000@163.com" -f id_rsa_github
 并将公钥拷贝到Add an SSH Key的Key字段中
 $ xclip -sel clip < id_rsa_github.pub
 编辑~/.ssh/config文件
-Host  github.com
+Host  github
     Hostname github.com
     User heroking2000
     Port 22
@@ -19,7 +19,7 @@ $ chmod 600 ~/.ssh/config
 $ ssh -T git@github.com
 
 然后在github.com上创建一个资源项目demo-repos，本地获取该资源
-$ git clone git@github.com:heroking2000/demo-repos.git
+$ git clone git@github:heroking2000/demo-repos.git
 
 
 
