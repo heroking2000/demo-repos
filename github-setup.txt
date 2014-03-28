@@ -2,9 +2,15 @@
 
 github.com是git公共资源平台，任何人均可以申请一个免费的git资源空间。
 注册成功后，需要将自己的SSH Key添加到github.com中，首先在~/.ssh/目录下生成密钥文件
-$ ssh-keygen -t rsa -C "heroking2000@163.com"
+$ ssh-keygen -t rsa -C "heroking2000@163.com" -f id_rsa_github
 并将公钥拷贝到Add an SSH Key的Key字段中
-$ xclip -sel clip < id_rsa.pub
+$ xclip -sel clip < id_rsa_github.pub
+编辑~/.ssh/config文件
+Host  github.com
+  IdentityFile  ~/.ssh/id_rsa_github
+并修改config文件权限
+$ chmod 600 ~/.ssh/config
+否则在交换密钥时提示Bad owner or permissions on ~/.ssh/config
 
 与github交换密钥
 $ ssh -T git@github.com
