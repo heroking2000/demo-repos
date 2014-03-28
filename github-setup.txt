@@ -7,7 +7,10 @@ $ ssh-keygen -t rsa -C "heroking2000@163.com" -f id_rsa_github
 $ xclip -sel clip < id_rsa_github.pub
 编辑~/.ssh/config文件
 Host  github.com
-  IdentityFile  ~/.ssh/id_rsa_github
+    Hostname github.com
+    User heroking2000
+    Port 22
+    IdentityFile  ~/.ssh/id_rsa_github
 并修改config文件权限
 $ chmod 600 ~/.ssh/config
 否则在交换密钥时提示Bad owner or permissions on ~/.ssh/config
