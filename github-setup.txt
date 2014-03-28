@@ -21,6 +21,8 @@ $ ssh -T git@github.com
 然后在github.com上创建一个资源项目demo-repos，本地获取该资源
 $ git clone git@github:heroking2000/demo-repos.git
 
+提交
+$ git push github
 
 
 
