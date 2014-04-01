@@ -21,7 +21,9 @@ $ ssh -T git@github.com
 $ git clone github:heroking2000/demo-repos.git
 
 提交
-$ git push 
+$ git push
+git config user.name="heroking2000"
+git config user.email="heroking2000@163.com"
 
 
 
