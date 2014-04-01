@@ -29,10 +29,14 @@ $ git config user.name="heroking2000"
 $ git config user.email="heroking2000@163.com"
 
 本地提交
-$ git commit -am 'fix '
+$ git commit -am "fix message"
 
 远程提交
 $ git push
+
+GoAgent代理设置
+$ git --config http.proxy http://127.0.0.1:8087/
+$ git --config http.sslVerify false
 
 
 
