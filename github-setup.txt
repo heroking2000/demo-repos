@@ -25,8 +25,8 @@ $ ssh -T git@github.com
 $ git clone github:heroking2000/demo-repos.git
 
 在当前资源库上配置user.name和user.email
-$ git config user.name="heroking2000"
-$ git config user.email="heroking2000@163.com"
+$ git config user.name "heroking2000"
+$ git config user.email "heroking2000@163.com"
 
 本地提交
 $ git commit -am "fix message"
