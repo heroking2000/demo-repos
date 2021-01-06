@@ -1,4 +1,4 @@
-*IDEA github配置
+#   IDEA github配置
 一、配置代理
 ![http-proxy](./assets/idea-github-1609914940441.png)
 二、账号，该账号通过授权获取
